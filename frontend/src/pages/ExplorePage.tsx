@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FireIcon, TrendingUpIcon } from '@heroicons/react/24/outline'
+import { FireIcon, ChartBarIcon } from '@heroicons/react/24/outline'
 
 const ExplorePage = () => {
   const [activeCategory, setActiveCategory] = useState('all')
@@ -80,7 +80,7 @@ const ExplorePage = () => {
       >
         <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-soft">
           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-            <TrendingUpIcon className="w-6 h-6 text-pinterest-red" />
+            <ChartBarIcon className="w-6 h-6 text-pinterest-red" />
             Trending Now
           </h2>
           <div className="flex flex-wrap gap-2">

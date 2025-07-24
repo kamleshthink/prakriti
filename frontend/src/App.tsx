@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 
 // Stores
 import { useAuthStore } from '@/stores/authStore'
@@ -38,7 +38,7 @@ import ProtectedRoute from '@/components/auth/ProtectedRoute'
 import AdminRoute from '@/components/auth/AdminRoute'
 
 function App() {
-  const { user, isLoading, checkAuth } = useAuthStore()
+  const { isLoading, checkAuth } = useAuthStore()
   const { theme, initializeTheme } = useThemeStore()
 
   useEffect(() => {

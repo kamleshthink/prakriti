@@ -17,6 +17,7 @@ interface AuthActions {
   register: (data: RegisterData) => Promise<void>
   logout: () => void
   checkAuth: () => Promise<void>
+  refreshAuth: () => Promise<void>
   updateUser: (user: Partial<User>) => void
   clearAuth: () => void
 }
